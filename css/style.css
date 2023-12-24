@@ -3,7 +3,168 @@ html,body {
     color: #2A4A5C;
 }
 
-h1 {
+.wrapper {
+    min-height: 100%;
+    width: 100%;
+    overflow: hidden;
+}
+.container {
+    max-width: 1500px;
+    margin: 0 auto;
+}
+
+.wrapper__inner {
+    padding: 50px;
+    background: #EFF6FF;
+}
+.wrapper__inner-content {
+    display: flex;
+    box-shadow: 12px 12px 12px 12px gainsboro;
+}
+.image-box {
+    position: relative;
+}
+.logo {
+    position: absolute;
+    top: 30px;
+    left: 30px;
+}
+
+.logo img {
+    width: 100px;
+}
+
+.registration {
+    background-color: #FFFFFF;
+}
+.registration__inner {
+    padding: 100px 50px;
+}
+
+.registration__inner-box {
+    width: 559px;
+}
+
+.registration__title {
+    font-size: 22px;
+    line-height: 24px;
     font-weight: 700;
-    font-size: 20px;
+    margin-bottom: 20px;
+}
+
+.registration__text {
+    font-size: 16px;
+    font-weight: 500;
+    margin-bottom: 40px;
+    color: #7B8A92;
+}
+
+.registration__inner-buttons {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 60px;
+}
+.registration__inner-btn {
+    display: inline-block;
+    letter-spacing: 0.5px;
+    line-height: 52px;
+    font-weight: 400;
+    padding: 0 50px;
+    color: #FFFFFF;
+    white-space: nowrap;
+    transition: .3s;
+    position: relative;
+}
+
+.registration__inner-btn:hover {
+    transform: scale(1.05);
+}
+
+.registration__inner-btn:first-child {
+    background: #255A9B;
+}
+
+.registration__inner-btn:first-child:before {
+    content: "";
+    position: absolute;
+    top: 15px;
+    left: 12px;
+    background: url("./../img/facebook.svg") no-repeat;
+    width: 20px;
+    height: 20px;
+}
+
+.registration__inner-btn:last-child {
+    background: #0076B6;
+}
+
+.registration__inner-btn:last-child:before {
+    content: "";
+    position: absolute;
+    top: 15px;
+    left: 14px;
+    background: url("./../img/linkedin.svg") no-repeat;
+    width: 60px;
+    height: 60px;
+}
+
+.registration__or {
+    position: relative;
+    text-align: center;
+    text-transform: uppercase;
+    font-weight: 500;
+    color: #7B8A92;
+    padding: 0 250px;
+    margin-bottom: 60px;
+}
+.registration__or::before {
+    content: '';
+    position: absolute;
+    top: 50%;
+    left: 100px;
+    height: 1px;
+    width: 150px;
+    background: #7B8A92;
+}
+
+.registration__or::after {
+    content: '';
+    position: absolute;
+    top: 50%;
+    right: 100px;
+    height: 1px;
+    width: 150px;
+    background: #7B8A92;
+}
+
+.form-inputs {
+    display: flex;
+    position: relative;
+    gap: 0 20px;
+}
+
+.form-input {
+    display: block;
+    border: 1px solid #D7DADD;
+    padding: 33px 16px 9px 10px;
+    width: 100%;
+}
+
+.form-input:focus {
+    border-left-color: #3698FB;
+}
+
+.form-label {
+    position: absolute;
+    flex: 1 1 auto;
+    color: #7B8A92;
+}
+
+.form-label:first-child {
+    left: 10px;
+    top: 15px;
+}
+.label-phone {
+    right: 215px;
+    top: 15px;
 }
